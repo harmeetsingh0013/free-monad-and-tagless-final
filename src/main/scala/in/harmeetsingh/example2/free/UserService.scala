@@ -3,7 +3,7 @@ package in.harmeetsingh.example2.free
 import java.util.UUID
 import cats.free.Free
 import in.harmeetsingh.example2.free.RepositoryAlg.{Emails, UserAndEmailAlg, Users}
-import in.harmeetsingh.example2.free.UserInterpreters._
+import in.harmeetsingh.example2.free.Interpreters._
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration._
 import cats.implicits._

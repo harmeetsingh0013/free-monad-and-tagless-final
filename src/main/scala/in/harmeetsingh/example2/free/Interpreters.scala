@@ -4,7 +4,7 @@ import cats.~>
 import in.harmeetsingh.example1.free.{FindUser, UpdatedUser}
 import scala.concurrent.Future
 
-object UserInterpreters {
+object Interpreters {
 
     val futureUserInterpreter = new (UserRepositoryAlg ~> Future) {
         override def apply[A](fa : UserRepositoryAlg[A]) : Future[A] = fa match {

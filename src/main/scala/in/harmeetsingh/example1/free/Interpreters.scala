@@ -3,7 +3,7 @@ package in.harmeetsingh.example1.free
 import cats.~>
 import scala.concurrent.Future
 
-object UserInterpreter {
+object Interpreters {
 
     val futureInterpreter = new (UserRepositoryAlg ~> Future) {
         override def apply[A](fa : UserRepositoryAlg[A]): Future[A] = fa match {

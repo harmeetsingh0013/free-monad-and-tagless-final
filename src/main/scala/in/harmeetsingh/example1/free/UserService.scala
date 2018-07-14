@@ -3,7 +3,7 @@ package in.harmeetsingh.example1.free
 import java.util.UUID
 import UserRepositoryAlg._
 import cats.free.Free
-import in.harmeetsingh.example1.free.UserInterpreter.futureInterpreter
+import in.harmeetsingh.example1.free.Interpreters.futureInterpreter
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration._
 import cats.implicits._
